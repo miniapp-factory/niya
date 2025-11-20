@@ -88,13 +88,14 @@ export default function Game2048() {
     return res;
   };
 
-  const opposite = (dir: string) => {
+  const opposite = (dir: string): string => {
     switch (dir) {
       case "up": return "down";
       case "down": return "up";
       case "left": return "right";
       case "right": return "left";
     }
+    return "";
   };
 
   const moveLeft = (g: number[][]) => {
