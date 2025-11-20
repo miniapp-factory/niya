@@ -49,7 +49,7 @@ export default function Game2048() {
     };
     window.addEventListener("keydown", handleKey);
     return () => window.removeEventListener("keydown", handleKey);
-  }, [grid, gameOver]);
+  }, []);
 
   const spawnTile = () => {
     const empty: [number, number][] = [];
